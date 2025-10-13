@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To-Do Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="tasks-container">
+  <header class="tasks-header">
+    <h1>My To-Do List</h1>
+    <button id="logoutBtn">Logout</button>
+  </header>
+
+  <div class="tasks-controls">
+    <div class="search-box">
+      <input type="text" id="search" placeholder="Search tasks...">
+      <button id="searchBtn">Search</button>
+    </div>
+    <div class="tasks-stats">Total: 0 | Completed: 0 | Pending: 0</div>
+    <button id="darkModeToggle">🌙</button>
+  </div>
+
+  <ul class="task-list"></ul>
+
+  <form id="add">
+    <input type="text" id="task" placeholder="Add a task" required>
+    <select id="priority">
+      <option value="low">Low</option>
+      <option value="medium">Medium</option>
+      <option value="high">High</option>
+    </select>
+    <input type="date" id="dueDate">
+    <button type="submit">Add Task</button>
+  </form>
+</div>
+
+<script src="tasks.js"></script>
+</body>
+</html>
